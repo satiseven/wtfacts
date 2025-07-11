@@ -1,0 +1,26 @@
+{
+  "name": "search-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/search-service/src",
+  "projectType": "application",
+  "tags": ["scope:search", "type:service"],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "search-service:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "search-service:build:development"
+        },
+        "production": {
+          "buildTarget": "search-service:build:production"
+        }
+      }
+    }
+  }
+}
