@@ -1,9 +1,0 @@
-{
-  "name": "auth-utils",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/auth/utils/src",
-  "projectType": "library",
-  "tags": ["scope:auth", "type:util"],
-  "// targets": "to see all targets run: nx show project auth-utils --web",
-  "targets": {}
-}

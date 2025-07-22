@@ -1,9 +1,0 @@
-{
-  "name": "seeds",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/database/seeds/src",
-  "projectType": "library",
-  "tags": ["scope:database", "type:seed"],
-  "// targets": "to see all targets run: nx show project seeds --web",
-  "targets": {}
-}
